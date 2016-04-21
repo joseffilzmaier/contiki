@@ -154,7 +154,7 @@ set_global_address(void)
  *
  * Note the IPCMV6 checksum verification depends on the correct uncompressed addresses.
  */
- 
+
 #if 0
 /* Mode 1 - 64 bits inline */
    uip_ip6addr(&server_ipaddr, UIP_DS6_DEFAULT_PREFIX, 0, 0, 0, 0, 0, 0, 1);
@@ -187,12 +187,12 @@ PROCESS_THREAD(udp_client_process, ev, data)
   print_local_addresses();
 
   /* new connection with remote host */
-  client_conn = udp_new(NULL, UIP_HTONS(UDP_SERVER_PORT), NULL); 
+  client_conn = udp_new(NULL, UIP_HTONS(UDP_SERVER_PORT), NULL);
   if(client_conn == NULL) {
     PRINTF("No UDP connection available, exiting the process!\n");
     PROCESS_EXIT();
   }
-  udp_bind(client_conn, UIP_HTONS(UDP_CLIENT_PORT)); 
+  udp_bind(client_conn, UIP_HTONS(UDP_CLIENT_PORT));
 
   PRINTF("Created a connection with the server ");
   PRINT6ADDR(&client_conn->ripaddr);
@@ -200,8 +200,8 @@ PROCESS_THREAD(udp_client_process, ev, data)
 	UIP_HTONS(client_conn->lport), UIP_HTONS(client_conn->rport));
 
   /* initialize serial line */
-  uart1_set_input(serial_line_input_byte);
-  serial_line_init();
+  //uart1_set_input(serial_line_input_byte);
+  //serial_line_init();
 
 
 #if WITH_COMPOWER
