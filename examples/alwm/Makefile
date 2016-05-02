@@ -1,5 +1,6 @@
 CONTIKI=../..
-UIP_CONF_IPV6_RPL=0
+
+CONTIKI_WITH_RPL=0
 
 all: alwm
 
