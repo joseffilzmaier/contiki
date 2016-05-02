@@ -11,7 +11,7 @@ PROCESS_THREAD(atmel_lightweight_mesh, ev, data) {
 
     PROCESS_BEGIN();
 
-    //NwkFrameHeader_t header;
+    NwkFrameHeader_t header;
 
     PROCESS_END();
 }
