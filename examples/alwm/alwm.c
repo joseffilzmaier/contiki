@@ -1,4 +1,5 @@
 
+#include "project_conf.h"
 #include "contiki.h"
 #include "stdio.h"
 #include "alwm.h"

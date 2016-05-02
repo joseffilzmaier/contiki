@@ -1,6 +1,6 @@
-all: alwm
 CONTIKI=../..
-CONTIKI_NO_NET=1
-NETSTACK_MAC=0
+UIP_CONF_IPV6_RPL=0
+
+all: alwm
 
 include $(CONTIKI)/Makefile.include
