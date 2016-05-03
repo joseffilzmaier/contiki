@@ -1,8 +1,10 @@
 CONTIKI=../..
 
 CONTIKI_WITH_RPL=0
+CONTIKI_WITH_IPV6=0
+CONTIKI_WITH_RIME=1
 
-CFLAGS += -DNETSTACK_CONF_MAC=sicslowmac_driver
+#CFLAGS += -DNETSTACK_CONF_MAC=rime_driver
 
 all: alwm
 
