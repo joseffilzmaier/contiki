@@ -2,7 +2,7 @@
 #ifndef ALWM_H_
 #define ALWM_H_
 
-#include "uip.h"
+/*#include "uip.h"
 
 
 extern unsigned char node_mac[8];
@@ -31,7 +31,7 @@ typedef struct NwkFrameHeader_t
     uint8_t   nwkSrcEndpoint : 4;
     uint8_t   nwkDstEndpoint : 4;
   };
-} NwkFrameHeader_t;
+} NwkFrameHeader_t;*/
 
 
 #endif //ALWM_H_
