@@ -309,6 +309,10 @@ main(int argc, char **argv)
     PRINTF("Node id not set\n");
   }
 
+  #define STRING2(x) #x
+#define STRING(x) STRING2(x)
+#pragma message STRING(NETSTACK_CONF_MAC)
+  
 #if NETSTACK_CONF_WITH_IPV6
   memcpy(&uip_lladdr.addr, node_mac, sizeof(uip_lladdr.addr));
   /* Setup nullmac-like MAC for 802.15.4 */
