@@ -167,10 +167,6 @@ set_rime_addr(void)
   printf("%d\n", addr.u8[i]);
 }
 
-
-#define STRING2(x) #x
-#define STRING(x) STRING2(x)
-
 /*---------------------------------------------------------------------------*/
 int contiki_argc = 0;
 char **contiki_argv;
@@ -179,8 +175,6 @@ int
 main(int argc, char **argv)
 {
     
-
-#pragma message STRING(NETSTACK_CONF_WITH_IPV6)
     
 #if NETSTACK_CONF_WITH_IPV6
 #if UIP_CONF_IPV6_RPL
