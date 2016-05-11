@@ -48,7 +48,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MESSAGE "Hello"
+#define MESSAGE "ONYX"
 
 static struct mesh_conn mesh;
 /*---------------------------------------------------------------------------*/
@@ -100,7 +100,7 @@ PROCESS_THREAD(example_mesh_process, ev, data)
     /* Send a message to node number 1. */
     
     packetbuf_copyfrom(MESSAGE, strlen(MESSAGE));
-    addr.u8[0] = 1;
+    addr.u8[0] = 0xa;
     addr.u8[1] = 0;
     mesh_send(&mesh, &addr);
   }
